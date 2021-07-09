@@ -18,7 +18,7 @@ const serieSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    elenco: {
+    temporadas: {
         type: String,
         required: true
     },
