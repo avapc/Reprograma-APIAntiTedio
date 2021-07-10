@@ -3,8 +3,8 @@ const app = express()
 const cors = require("cors")
 
 const db = require('./data/database')
-db.connect() 
-
+db.connect()
+ 
 app.use(cors()) 
 app.use(express.json())
 
