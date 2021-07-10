@@ -26,6 +26,11 @@ const filmeSchema = new mongoose.Schema({
         type: Date,
         required: true,
         default: new Date
+    },
+    nota: {
+        type: Number,
+        required: true,
+        default: 7
     }
 })
 

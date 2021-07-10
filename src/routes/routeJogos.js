@@ -5,5 +5,9 @@ const controller = require('../controller/controllerJogos')
 //Criar um titulo -> POST -> save()
 router.post('/adicionar', controller.criaJogo)
 router.get('/mostrarTodos', controller.mostraJogo)
+router.get('/filtrarGenero', controller.filtrarJogosGenero)
+router.delete('/deletar', controller.deletarJogos)
+router.patch('/atualizar/:id', controller.atualizarJogo)
+router.patch('/darNota/:id', controller.darNotaJogo)
 
 module.exports = router
