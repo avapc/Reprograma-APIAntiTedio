@@ -5,8 +5,8 @@ const cors = require("cors")
 const db = require('./data/database')
 db.connect() 
 
-app.use(cors()) //resolve o problema de uma só origem do navegador
-app.use(express.json()) //transforma em json o body (que vem em string)
+app.use(cors()) 
+app.use(express.json())
 
 const index = require("./routes/index")
 const filmes = require("./routes/routeFilmes")

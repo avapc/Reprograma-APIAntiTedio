@@ -2,7 +2,6 @@ const express = require('express')
 const router = express.Router()
 const controller = require('../controller/controllerFilmes')
 
-//Criar um titulo -> POST -> save()
 router.post('/adicionar', controller.criaFilme)
 router.get('/mostrarTodos', controller.mostraFilmes)
 router.get('/filtrarGenero', controller.filtrarFilmesGenero)
