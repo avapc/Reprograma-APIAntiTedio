@@ -63,13 +63,16 @@ A API **API Anti Tedio** tem como objetivo criar uma plataforma aonde o usuario 
 
 ## Contrato
 
+### Requisitos e rotas index
+- [x ]  **[GET] "/"** Deverá retornar uma introdução á API.
+
 ### Requisitos e rotas filmes
 - [x ]  **[GET] "/filmes/mostrarTodos"** Deverá retornar todos os filmes cadastrados.
 - [x ]  **[GET] "/filmes/filtrarGenero"** Deverá retornar todos os filmes que contenham o genero delcarado pelo usuário.
 - [x ]  **[POST] "/filmes/adicionar"** Deverá adicionar um novo filme á database.
 - [x ]  **[PATCH] "/filmes/atualizar/[ID]"** Deverá atualizar um filme por id especifico, caso tenha sido cadastrado errado.
 - [x ]  **[PATCH] "/filmes/darNota/[ID]"** Deverá permitir que o usuario de uma nota ao filme por id especifico, o calculo da nota final é a media da nota final cadastrada com a nota dada pelo usuário.
-- [x ]  **[DELETE] "/filmes/deletar/[ID]"** Deverá deletar um filme por id especifico.
+- [x ]  **[DELETE] "/filmes/deletar"** Deverá deletar um filme pelo nome.
 
 ### Requisitos e rotas jogos
 - [x ]  **[GET] "/jogos/mostrarTodos"** Deverá retornar todos os jogos cadastrados.
@@ -77,7 +80,7 @@ A API **API Anti Tedio** tem como objetivo criar uma plataforma aonde o usuario 
 - [x ]  **[POST] "/jogos/adicionar"** Deverá adicionar um novo jogo á database.
 - [x ]  **[PATCH] "/jogos/atualizar/[ID]"** Deverá atualizar um jogo por id especifico, caso tenha sido cadastrado errado.
 - [x ]  **[PATCH] "/jogos/darNota/[ID]"** Deverá permitir que o usuario de uma nota ao jogo por id especifico, o calculo da nota final é a media da nota final cadastrada com a nota dada pelo usuário.
-- [x ]  **[DELETE] "/jogos/deletar/[ID]"** Deverá deletar um jogos por id especifico.
+- [x ]  **[DELETE] "/jogos/deletar"** Deverá deletar um jogos pelo nome.
 
 ### Requisitos e rotas series
 - [x ]  **[GET] "/series/mostrarTodos"** Deverá retornar todos as series cadastrados.
@@ -85,7 +88,7 @@ A API **API Anti Tedio** tem como objetivo criar uma plataforma aonde o usuario 
 - [x ]  **[POST] "/series/adicionar"** Deverá adicionar uma nova serie á database.
 - [x ]  **[PATCH] "/series/atualizar/[ID]"** Deverá atualizar uma serie por id especifico, caso tenha sido cadastrada errado.
 - [x ]  **[PATCH] "/series/darNota/[ID]"** Deverá permitir que o usuario de uma nota a serie por id especifico, o calculo da nota final é a media da nota final cadastrada com a nota dada pelo usuário.
-- [x ]  **[DELETE] "/series/deletar/[ID]"** Deverá deletar uma serie por id especifico.
+- [x ]  **[DELETE] "/series/deletar"** Deverá deletar uma serie pelo nome.
 
 
 
