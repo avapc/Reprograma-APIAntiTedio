@@ -69,26 +69,26 @@ A API **API Anti Tedio** tem como objetivo criar uma plataforma aonde o usuario 
 ### Requisitos e rotas filmes
 - [x ]  **[GET] "/filmes/mostrarTodos"** Deverá retornar todos os filmes cadastrados.
 - [x ]  **[GET] "/filmes/filtrarGenero"** Deverá retornar todos os filmes que contenham o genero delcarado pelo usuário.
-- [x ]  **[POST] "/filmes/adicionar"** Deverá adicionar um novo filme á database.
-- [x ]  **[PATCH] "/filmes/atualizar/[ID]"** Deverá atualizar um filme por id especifico, caso tenha sido cadastrado errado.
+- [x ]  **[POST] "/filmes/adicionar"** Deverá adicionar um novo filme á database, porém somente caso a senha estaja correta.
+- [x ]  **[PATCH] "/filmes/atualizar/[ID]"** Deverá atualizar um filme por id especifico, caso tenha sido cadastrado errado, porém somente caso a senha estaja correta.
 - [x ]  **[PATCH] "/filmes/darNota/[ID]"** Deverá permitir que o usuario de uma nota ao filme por id especifico, o calculo da nota final é a media da nota final cadastrada com a nota dada pelo usuário.
-- [x ]  **[DELETE] "/filmes/deletar"** Deverá deletar um filme pelo nome.
+- [x ]  **[DELETE] "/filmes/deletar"** Deverá deletar um filme pelo nome, porém somente caso a senha estaja correta.
 
 ### Requisitos e rotas jogos
 - [x ]  **[GET] "/jogos/mostrarTodos"** Deverá retornar todos os jogos cadastrados.
 - [x ]  **[GET] "/jogos/filtrarGenero"** Deverá retornar todos os jogos que contenham o genero delcarado pelo usuário.
-- [x ]  **[POST] "/jogos/adicionar"** Deverá adicionar um novo jogo á database.
-- [x ]  **[PATCH] "/jogos/atualizar/[ID]"** Deverá atualizar um jogo por id especifico, caso tenha sido cadastrado errado.
+- [x ]  **[POST] "/jogos/adicionar"** Deverá adicionar um novo jogo á database, porém somente caso a senha estaja correta.
+- [x ]  **[PATCH] "/jogos/atualizar/[ID]"** Deverá atualizar um jogo por id especifico, caso tenha sido cadastrado errado, porém somente caso a senha estaja correta.
 - [x ]  **[PATCH] "/jogos/darNota/[ID]"** Deverá permitir que o usuario de uma nota ao jogo por id especifico, o calculo da nota final é a media da nota final cadastrada com a nota dada pelo usuário.
-- [x ]  **[DELETE] "/jogos/deletar"** Deverá deletar um jogos pelo nome.
+- [x ]  **[DELETE] "/jogos/deletar"** Deverá deletar um jogos pelo nome, porém somente caso a senha estaja correta.
 
 ### Requisitos e rotas series
 - [x ]  **[GET] "/series/mostrarTodos"** Deverá retornar todos as series cadastrados.
-- [x ]  **[GET] "/series/filtrarGenero"** Deverá retornar todos as series que contenham o genero delcarado pelo usuário.
+- [x ]  **[GET] "/series/filtrarGenero"** Deverá retornar todos as series que contenham o genero delcarado pelo usuário, porém somente caso a senha estaja correta.
 - [x ]  **[POST] "/series/adicionar"** Deverá adicionar uma nova serie á database.
-- [x ]  **[PATCH] "/series/atualizar/[ID]"** Deverá atualizar uma serie por id especifico, caso tenha sido cadastrada errado.
+- [x ]  **[PATCH] "/series/atualizar/[ID]"** Deverá atualizar uma serie por id especifico, caso tenha sido cadastrada errado, porém somente caso a senha estaja correta.
 - [x ]  **[PATCH] "/series/darNota/[ID]"** Deverá permitir que o usuario de uma nota a serie por id especifico, o calculo da nota final é a media da nota final cadastrada com a nota dada pelo usuário.
-- [x ]  **[DELETE] "/series/deletar"** Deverá deletar uma serie pelo nome.
+- [x ]  **[DELETE] "/series/deletar"** Deverá deletar uma serie pelo nome, porém somente caso a senha estaja correta.
 
 
 

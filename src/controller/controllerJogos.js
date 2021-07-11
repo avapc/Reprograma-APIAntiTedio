@@ -10,6 +10,9 @@ const criaJogo = async(req, res) => {
         descricao:req.body.descricao,
         plataformas:req.body.plataformas
     })
+    if(req.body.senha != "admin123"){
+        res.status(403).json({message: "Acesso negado, senha incorreta"})
+    }
     try{
         const novoJogo = await jogo.save()
         return res.status(201).json(novoJogo)
@@ -38,6 +41,9 @@ const filtrarJogosGenero = async (req, res) => {
 
 const deletarJogos = async (req, res) => {
     const jogos = await Jogos.deleteOne({nome: req.query.nome})
+    if(req.body.senha != "admin123"){
+        res.status(403).json({message: "Acesso negado, senha incorreta"})
+    }
     if(jogos.deletedCount == 0){
         res.status(404).json({mensagem: "Jogo não encontrado"})
     }
@@ -47,6 +53,9 @@ const deletarJogos = async (req, res) => {
 
 const atualizarJogo = async (req, res) =>{
     const jogos = await Jogos.findById(req.params.id)
+    if(req.body.senha != "admin123"){
+        res.status(403).json({message: "Acesso negado, senha incorreta"})
+    }
     
     if(jogos == undefined || jogos == ''){
         res.status(404).json({mensagem: "Jogo não encontrado"})

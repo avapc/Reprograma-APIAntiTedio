@@ -10,6 +10,10 @@ const criaFilme = async(req, res) => {
         descricao:req.body.descricao,
         elenco:req.body.elenco
     })
+    if(req.body.senha != "admin123"){
+        res.status(403).json({message: "Acesso negado, senha incorreta"})
+    }
+
     try{
         const novoFilme = await filme.save()
         return res.status(201).json(novoFilme)
@@ -38,6 +42,10 @@ const filtrarFilmesGenero = async (req, res) => {
 
 const deletarFilme = async (req, res) => {
     const filmes = await Filme.deleteOne({nome: req.query.nome})
+    if(req.body.senha != "admin123"){
+        res.status(403).json({message: "Acesso negado, senha incorreta"})
+    }
+    
     if(filmes.deletedCount == 0){
         res.status(404).json({mensagem: "Filme não encontrado"})
     }
@@ -46,6 +54,10 @@ const deletarFilme = async (req, res) => {
 
 const atualizarFilme = async (req, res) =>{
     const filmes = await Filme.findById(req.params.id)
+
+    if(req.body.senha != "admin123"){
+        res.status(403).json({message: "Acesso negado, senha incorreta"})
+    }
     
     if(filmes == undefined || filmes == ''){
         res.status(404).json({mensagem: "Filme não encontrado"})

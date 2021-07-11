@@ -9,7 +9,10 @@ const criaSerie = async(req, res) => {
         publicacao:req.body.publicacao,
         descricao:req.body.descricao,
         temporadas:req.body.temporadas
-    }) 
+    })
+    if(req.body.senha != "admin123"){
+        res.status(403).json({message: "Acesso negado, senha incorreta"})
+    }
     try{
         const novoSerie = await serie.save()
         return res.status(201).json(novoSerie)
@@ -38,6 +41,9 @@ const filtrarSeriesGenero = async (req, res) => {
 
 const deletarSerie = async (req, res) => {
     const series = await Series.deleteOne({nome: req.query.nome})
+    if(req.body.senha != "admin123"){
+        res.status(403).json({message: "Acesso negado, senha incorreta"})
+    }
     if(series.deletedCount == 0){
         res.status(404).json({mensagem: "Serie não encontrada"})
     }
@@ -47,6 +53,9 @@ const deletarSerie = async (req, res) => {
 
 const atualizarSerie = async (req, res) =>{
     const series = await Series.findById(req.params.id)
+    if(req.body.senha != "admin123"){
+        res.status(403).json({message: "Acesso negado, senha incorreta"})
+    }
     
     if(series == undefined || series == ''){
         res.status(404).json({mensagem: "Serie não encontrada"})
