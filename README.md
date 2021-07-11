@@ -102,7 +102,7 @@ A API **API Anti Tedio** tem como objetivo criar uma plataforma aonde o usuario 
 - genero: texto e obrigatório
 - publicacao: texto e obrigatório
 - descricao: texto e obrigatório
-- nota: numero e obrigatório
+- nota: numero gerado automaticamente e obrigatório
 - elenco: texto e obrigatório
 - criadoEm: data gerada automaticamente e obrigatório
 
@@ -132,7 +132,7 @@ A API **API Anti Tedio** tem como objetivo criar uma plataforma aonde o usuario 
 - genero: texto e obrigatório
 - publicacao: texto e obrigatório
 - descricao: texto e obrigatório
-- nota: numero e obrigatório
+- nota: numero gerado automaticamente e obrigatório
 - plataformas: texto e obrigatório
 - criadoEm: data gerada automaticamente e obrigatório
 
@@ -160,7 +160,7 @@ A API **API Anti Tedio** tem como objetivo criar uma plataforma aonde o usuario 
 - genero: texto e obrigatório
 - publicacao: texto e obrigatório
 - descricao: texto e obrigatório
-- nota: numero e obrigatório
+- nota: numero gerado automaticamente e obrigatório
 - temporadas: texto e obrigatório
 - criadoEm: data gerada automaticamente e obrigatório
 
